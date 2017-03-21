@@ -1,6 +1,0 @@
-c:\users\bward\documents\visual studio 2015\Projects\Randomness\Randomness\bin\Debug\Randomness.exe.config
-c:\users\bward\documents\visual studio 2015\Projects\Randomness\Randomness\bin\Debug\Randomness.exe
-c:\users\bward\documents\visual studio 2015\Projects\Randomness\Randomness\bin\Debug\Randomness.pdb
-c:\users\bward\documents\visual studio 2015\Projects\Randomness\Randomness\obj\Debug\Randomness.csprojResolveAssemblyReference.cache
-c:\users\bward\documents\visual studio 2015\Projects\Randomness\Randomness\obj\Debug\Randomness.exe
-c:\users\bward\documents\visual studio 2015\Projects\Randomness\Randomness\obj\Debug\Randomness.pdb

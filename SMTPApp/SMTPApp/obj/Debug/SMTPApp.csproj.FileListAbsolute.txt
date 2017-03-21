@@ -1,9 +1,0 @@
-c:\users\bward\documents\visual studio 2015\Projects\SMTPApp\SMTPApp\bin\Debug\SMTPApp.exe.config
-c:\users\bward\documents\visual studio 2015\Projects\SMTPApp\SMTPApp\bin\Debug\SMTPApp.exe
-c:\users\bward\documents\visual studio 2015\Projects\SMTPApp\SMTPApp\bin\Debug\SMTPApp.pdb
-c:\users\bward\documents\visual studio 2015\Projects\SMTPApp\SMTPApp\obj\Debug\SMTPApp.csprojResolveAssemblyReference.cache
-c:\users\bward\documents\visual studio 2015\Projects\SMTPApp\SMTPApp\obj\Debug\SMTPApp.exe
-c:\users\bward\documents\visual studio 2015\Projects\SMTPApp\SMTPApp\obj\Debug\SMTPApp.pdb
-C:\Projects\Misc\SMTPApp\SMTPApp\bin\Debug\SMTPApp.exe.config
-C:\Projects\Misc\SMTPApp\SMTPApp\obj\Debug\SMTPApp.exe
-C:\Projects\Misc\SMTPApp\SMTPApp\obj\Debug\SMTPApp.pdb
