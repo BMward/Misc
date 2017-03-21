@@ -1,10 +1,13 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace SMTPApp
 {
@@ -33,12 +36,9 @@ namespace SMTPApp
 
         static void Main(string[] args)
         {
-            Campaign testGordmansCampaign = new Campaign()
-            {
-                Attachments = new List<string>() { @"C:\temp\em\test.xlsx" , @"C:\temp\em\test.pdf" },
-                Contacts = new List<string>() { "test@test.com" , "test2@test.com" },
-                Sender = "test@test.com"
-            };
+            Campaign testGordmansCampaign = new Campaign();
+            testGordmansCampaign.Messages.Add("Test", new Message() { From = "me", MessageBody = "lol", MessageSubject = "hahahah" });
+            
             using (SmtpClient client = new SmtpClient("haha", 25))
             {
                 bool errorResponse = false;
