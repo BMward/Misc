@@ -23,20 +23,6 @@ namespace EFConsoleApp
             }
         }
 
-        public static void CreateTransaction(int customerId, int itemId)
-        {
-            using (var db = new TransactionDbContext())
-            {
-                var trans = new Transaction()
-                {
-                    CustomerId = customerId,
-                    ItemId = itemId
-                };
-                db.Transactions.Add(trans);
-                db.SaveChanges();
-            }
-        }
-
         public static void DeleteInventoryItem(int itemId)
         {
             using (var db = new InventoryItemDbContext())
@@ -87,10 +73,10 @@ namespace EFConsoleApp
 
         public static void GetItems()
         {
-            List<InventoryItem> items;
+            DbSet<InventoryItem> items;
             using (var db = new InventoryItemDbContext())
             {
-                items = db.Items.ToList();
+                items = db.Items;
             }
             foreach(var item in items)
                 PrintItemDescription(item, true);
@@ -101,7 +87,7 @@ namespace EFConsoleApp
             InventoryItem item;
             using (var db = new InventoryItemDbContext())
             {
-                var items = db.Items.ToList();
+                var items = db.Items;
                 item = items.First(i => i.InventoryId == Id);
                 try
                 {

@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace EFConsoleApp.DbContexts
 {
-    public class CustomerDbContext : DbContext
-    {
-        public CustomerDbContext() : base("name=InventoryContext")
-        {
+    //public class CustomerDbContext : DbContext
+    //{
+    //    public CustomerDbContext() : base("name=InventoryContext")
+    //    {
 
-        }
-        public DbSet<Customer> Customers { get; set; }
-    }
+    //    }
+    //    public DbSet<Customer> Customers { get; set; }
+    //}
 }

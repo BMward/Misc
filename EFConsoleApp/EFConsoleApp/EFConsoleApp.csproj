@@ -53,6 +53,15 @@
     <Compile Include="DbContexts\InvetoryItemDbContext.cs" />
     <Compile Include="DbContexts\TransactionDbContext.cs" />
     <Compile Include="AppMethods.cs" />
+    <Compile Include="Migrations\201705091332546_InitialCreate.cs" />
+    <Compile Include="Migrations\201705091332546_InitialCreate.Designer.cs">
+      <DependentUpon>201705091332546_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705091515473_ReorderThreshold.cs" />
+    <Compile Include="Migrations\201705091515473_ReorderThreshold.Designer.cs">
+      <DependentUpon>201705091515473_ReorderThreshold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\InvetoryItem.cs" />
     <Compile Include="Models\Transaction.cs" />
@@ -63,6 +72,13 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201705091332546_InitialCreate.resx">
+      <DependentUpon>201705091332546_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705091515473_ReorderThreshold.resx">
+      <DependentUpon>201705091515473_ReorderThreshold.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
