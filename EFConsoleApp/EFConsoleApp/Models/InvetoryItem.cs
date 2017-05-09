@@ -20,6 +20,6 @@ namespace EFConsoleApp.Models
         public double AcquisitionCost { get; set; } 
         public double ListPrice { get; set; }
         public int InStock { get; set; }
-        public int ReorderThreshhold { get; set; }
+        public int ReorderThreshold { get; set; }
     }
 }

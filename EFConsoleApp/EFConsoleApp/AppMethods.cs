@@ -73,13 +73,12 @@ namespace EFConsoleApp
 
         public static void GetItems()
         {
-            DbSet<InventoryItem> items;
             using (var db = new InventoryItemDbContext())
             {
-                items = db.Items;
+                var items = db.Items;
+                foreach(var item in items)
+                    PrintItemDescription(item, true);
             }
-            foreach(var item in items)
-                PrintItemDescription(item, true);
         }
 
         public static void UpdateInventoryItem(int Id)

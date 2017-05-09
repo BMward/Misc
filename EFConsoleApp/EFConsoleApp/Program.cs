@@ -21,22 +21,21 @@ namespace EFConsoleApp
             {
                 Console.WriteLine("Enter command :: ");
                 var input = Console.ReadLine();
-                switch (input.ToLower())
+                switch (input.Substring(0,2).ToLower())
                 {
                     case "li":
                         AppMethods.GetItems();
                         break;
                     case "fi":
+                        var arg = int.Parse(input.Substring(3));
                         try
                         {
-                            Console.WriteLine("Please enter Id number of item.");
-                            var item = int.Parse(Console.ReadLine());
-                            AppMethods.GetItem(item);
+                            AppMethods.GetItem(arg);
                             break;
                         }
                         catch (Exception ex)
                         {
-                            Console.WriteLine("GET ITEMS Error: " + ex.Message);
+                            Console.WriteLine("GET ITEM Error: " + ex.Message);
                             break;
                         }
                     case "ci":
@@ -51,11 +50,10 @@ namespace EFConsoleApp
                             break;
                         }
                     case "ui":
+                        var uiarg = int.Parse(input.Substring(3));
                         try
                         {
-                            Console.WriteLine("Please enter item ID: ");
-                            var Id = int.Parse(Console.ReadLine());
-                            AppMethods.UpdateInventoryItem(Id);
+                            AppMethods.UpdateInventoryItem(uiarg);
                             break;
                         }
                         catch (Exception)
@@ -76,14 +74,14 @@ namespace EFConsoleApp
                             Console.WriteLine("DELETE ITEM Error: " + ex.Message);
                             break;
                         }
-                    case "q":
+                    case "qq":
                         running = false;
                         break;
-                    case "h":
+                    case "hh":
                         Console.WriteLine("LI : List all items.");
-                        Console.WriteLine("FI : Get all information on an Item.");
+                        Console.WriteLine("FI {itemId}: Get all information on an Item.");
                         Console.WriteLine("CI : Create new item.");
-                        Console.WriteLine("UI : Update item.");
+                        Console.WriteLine("UI {itemId}: Update item.");
                         Console.WriteLine("DI : Delete item.");
                         Console.WriteLine("Q : Exit program.");
                         break;

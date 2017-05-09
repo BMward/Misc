@@ -61,6 +61,10 @@
     <Compile Include="Migrations\201705091515473_ReorderThreshold.Designer.cs">
       <DependentUpon>201705091515473_ReorderThreshold.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705091531467_RenameReorderCol.cs" />
+    <Compile Include="Migrations\201705091531467_RenameReorderCol.Designer.cs">
+      <DependentUpon>201705091531467_RenameReorderCol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\InvetoryItem.cs" />
@@ -78,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705091515473_ReorderThreshold.resx">
       <DependentUpon>201705091515473_ReorderThreshold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705091531467_RenameReorderCol.resx">
+      <DependentUpon>201705091531467_RenameReorderCol.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
