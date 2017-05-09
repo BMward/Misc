@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace EFConsoleApp.DbContexts
 {
-    public class InvetoryItemDbContext : DbContext
+    public class InventoryItemDbContext : DbContext
     {
-        public InvetoryItemDbContext() : base("InventoryContext")
+        public InventoryItemDbContext() : base("name=InventoryContext")
         {
 
         }
 
-        public DbSet<InvetoryItem> InventoryItems { get; set; } 
+        public DbSet<InventoryItem> Items { get; set; } 
     }
 }

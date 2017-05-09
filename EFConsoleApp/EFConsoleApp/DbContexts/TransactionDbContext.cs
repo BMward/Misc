@@ -10,7 +10,7 @@ namespace EFConsoleApp.DbContexts
 {
     public class TransactionDbContext : DbContext
     {
-        public TransactionDbContext() : base("InventoryContext")
+        public TransactionDbContext() : base("name=InventoryContext")
         {
 
         }

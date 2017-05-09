@@ -18,7 +18,6 @@ namespace SMTPApp
         }
 
         public Dictionary<string, Message> Messages = new Dictionary<string, Message>();
-        public Dictionary<string, string> contacts = new Dictionary<string, string>();
     }
 
     public class Message

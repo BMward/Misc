@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TropoTextingPOC", "TropoTextingPOC\TropoTextingPOC.csproj", "{4793F8C0-BBF4-4CFA-8630-C8F3E1295A36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TropoOutboundSMS", "tropo-webapi-csharp\TropoOutboundSMS\TropoOutboundSMS.csproj", "{564E3004-0DD7-46BE-A3A2-7F7459EB3036}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TropoSamples", "tropo-webapi-csharp\TropoSample\TropoSamples.csproj", "{27AD4ADC-9774-40C0-A1FE-DA8A8BED5165}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4793F8C0-BBF4-4CFA-8630-C8F3E1295A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4793F8C0-BBF4-4CFA-8630-C8F3E1295A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4793F8C0-BBF4-4CFA-8630-C8F3E1295A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4793F8C0-BBF4-4CFA-8630-C8F3E1295A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{564E3004-0DD7-46BE-A3A2-7F7459EB3036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564E3004-0DD7-46BE-A3A2-7F7459EB3036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564E3004-0DD7-46BE-A3A2-7F7459EB3036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564E3004-0DD7-46BE-A3A2-7F7459EB3036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27AD4ADC-9774-40C0-A1FE-DA8A8BED5165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27AD4ADC-9774-40C0-A1FE-DA8A8BED5165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27AD4ADC-9774-40C0-A1FE-DA8A8BED5165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27AD4ADC-9774-40C0-A1FE-DA8A8BED5165}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
