@@ -15,12 +15,12 @@ namespace TropoTextingPOC
     {
         static void Main(string[] args)
         {
-            string smsToken = "76494669545746675371426a4776735a6f5864736871694741684b4c5743475972646d5662785a6b7767475a";
+            string smsToken = "";
 
             IDictionary<string, string> parameters = new Dictionary<string, string>();
 
-            parameters.Add("sendToNumber", "18034173630");
-            parameters.Add("fromNumber", "18043173630");
+            parameters.Add("sendToNumber", "");
+            parameters.Add("fromNumber", "");
 
             string channel = Channel.Text;
             parameters.Add("channel", channel);
